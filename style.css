@@ -21,7 +21,7 @@
  --Very-dark-blue: hsl(224, 21%, 14%);
 }
 body{
-    background-color: hsl(205, 33%, 90%);
+    background-color: hsl(210, 60%, 98%);
     font-family: 'Plus Jakarta Sans', sans-serif;  
    
  
@@ -79,7 +79,7 @@ body{
 .post{
   width: 100%;
   /* background-color: hsl(210, 60%, 98%); */
-  margin: 10px 0;
+  margin: 15px 0;
   display: flex;
   padding: 10px;
   border-radius: 10px;
