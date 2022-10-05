@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+/* 
+   */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+:root{
+    --White: hsl(0, 0%, 100%);
+   --Very-light-grayish-blue: hsl(210, 60%, 98%);
+ --Light-grayish-blue-1: hsl(211, 68%, 94%);
+--Light-grayish-blue-2: hsl(205, 33%, 90%);
+ --Grayish-blue: hsl(219, 14%, 63%);
+ --Dark-grayish-blue: hsl(219, 12%, 42%);
+ --Very-dark-blue: hsl(224, 21%, 14%);
+}
+body{
+    background-color: hsl(205, 33%, 90%);
+    font-family: 'Plus Jakarta Sans', sans-serif;  
+   
+ 
+}
+.mainContainer{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   min-height: 100vh;
+   
+      
+
+}
+.container{
+  
+    background-color: white;
+    width: 700px;
+    height:fit-content;
+    font-size: 14px;
+    border-radius: 15px;
+    padding: 20px;
+}
+.mainSection{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.title span{
+    background-color: hsl(219, 85%, 26%);
+    color: white;
+    padding: 2px 10px;
+    margin-left: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+#markAsRead{
+    background-color: transparent;
+    border: none;
+     font-size: 17px;
+}
+.imp-notf{
+    color: hsl(219, 12%, 42%);
+    font-weight: bold;
+}
+
+#markAsRead:hover,.userName:hover,.imp-notf:hover{
+    color:hsl(219, 85%, 26%) ;
+    cursor: pointer;
+    font-weight: bold;
+   
+}
+.post{
+  width: 100%;
+  /* background-color: hsl(210, 60%, 98%); */
+  margin: 10px 0;
+  display: flex;
+  padding: 15px;
+  border-radius: 10px;
+   color: hsl(219, 14%, 63%);
+}
+
+.post img{
+  width: 40px;
+  height: 40px;
+}
+.post p{
+  margin-left: 10px;
+  line-height: 1.3rem;
+}
+.userName{
+    font-weight: bold;
+    color: black;
+}
+
+.duration{
+    display: block;
+   
+}
+
+/* .redDote{
+    margin-left: 5px;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+} */
+.chess {
+
+  margin-left: auto;
+    cursor: pointer;
+
+  
+}
+
+.message{
+    background-color: white;
+    border: 1px solid hsl(205, 33%, 90%) ;
+    margin: 10px;
+    padding: 20px;
+    color: hsl(219, 12%, 42%);
+    border-radius:5px ;
+
+}
+.message:hover{
+    cursor: pointer;
+    background-color: hsl(205, 33%, 90%);
+}
+.unRead{
+   background-color: hsl(210, 60%, 98%);
+}
+.redDote{
+    margin-top:7px;
+    margin-left: 5px;
+
+    min-width: 10px;
+    height:10px; 
+    border-radius: 50%;
+    background-color: red;
+   
+
+}
+
+@media (max-width:800px) {
+    .mainContainer{
+        height: 100%;
+    }
+
+    .container{
+       width: 600px;
+        height: 100%;
+        
+        
+}}
+
+@media (max-width:650px) {
+
+    .container{
+        padding: 10px;
+        width: 100%;
+        height: 100%;
+        border-radius:0;
+        
+} 
+  .redDote{
+
+  }
+}
